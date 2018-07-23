@@ -1,0 +1,68 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+
+
+<div class="row">
+    <div class="col-md-12">
+        <div id="messagesTable"></div>
+    </div>
+</div>
+
+@section Scripts{
+    @*<script src='<%: ResolveClientUrl("~/Scripts/jquery.signalR-2.3.0.min.js") %>'></script>
+    <script src='<%: ResolveClientUrl("~/signalr/hubs") %>'></script>*@
+
+    <script src="~/Scripts/jquery.signalR-2.3.0.min.js"></script>
+    <script src="~/signalr/hubs"></script>
+
+    <script type="text/javascript">
+        $(function () {
+            // Declare a proxy to reference the hub.
+            var notifications = $.connection.notificationHub;
+            //var notifications = $.connection.notificationHub;
+
+            //debugger;
+            // Create a function that the hub can call to broadcast messages.
+            notifications.client.updateMessages = function () {
+                getAllMessages()
+            };
+            // Start the connection.
+            setTimeout(function () {
+                $.connection.hub.start().done(function () {
+                    getAllMessages();
+                });
+            }, 5000);
+        });
+
+        function hubConnection(url, options) {
+            var settings = {
+                qs: null,
+                logging: false,
+                useDefaultPath: true
+            };
+
+            $.extend(settings, options);
+
+            if (!url || settings.useDefaultPath) {
+                url = (url || "") + "/signalr";
+            }
+            return new hubConnection.fn.init(url, settings);
+        }
+
+        function getAllMessages() {
+            var tbl = $('#messagesTable');
+            $.ajax({
+                url: '/home/GetMessages',
+                contentType: 'application/json; charset:utf-8',
+                type: 'GET',
+                dataType: 'html'
+            }).done(function (result) {
+                tbl.empty().append(result);
+            }).error(function () {
+            });
+        }
+    </script>
+
+}
