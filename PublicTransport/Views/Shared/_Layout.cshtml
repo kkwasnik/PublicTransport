@@ -1,51 +1,37 @@
-﻿@section scriptss
+@section theme
 {
-    @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
-    @Scripts.Render("~/Scripts/jquery.signalR-2.2.3.min.js")
-    @Scripts.Render("~/signalr/hubs")
+    @Scripts.Render("~/BootstrapCreative/css/css")
 }
 
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
-    @Styles.Render("~/Content/css")
-    @Scripts.Render("~/bundles/modernizr")
-    <script src="~/Scripts/vue.min.js"></script>
+  <script src="~/Scripts/vue.js"></script>
+  <script src="~/Scripts/vue-strap.min.js"></script>
+  <script src="~/Scripts/vue-resource.min.js"></script>
+  @*<script src="~/Scripts/isMobileBrowser.js"></script>*@
+  @*<script src="~/Scripts/vue-strap-lang.js"></script>*@
+  <script src="~/Scripts/axios.js"></script>
+  @*<script src="~/Scripts/utils.js" type="module"></script>
+    <script src="~/Scripts/NodeList.js" type="module"></script>*@
+  <script src="~/Scripts/vSelect.js"></script>
+  <script src="~/Scripts/Vue/Components/vue-upload-component.js"></script>
+  <script src="~/Scripts/Vue/Main.js"></script>
+  <script src="~/Scripts/Vue/PageComponents/contactComponent.js"></script>
+  <script src="~/Scripts/Vue/PageComponents/mypageComponent.js"></script>
+  <script src="~/Scripts/Vue/PageComponents/mainPageComponent.js"></script>
+  <script src="~/Scripts/Vue/PageComponents/historyComponent.js"></script>
+  <script src="~/Scripts/Vue/PageComponents/reportProblemComponent.js"></script>
+  @*<script src="~/Scripts/Vue/Components/Alert.js"></script>*@
+  @*<script src="~/Scripts/vueinput.js"></script>*@
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("About", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <div class="container body-content">
+    <div>
         @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
-        </footer>
     </div>
-
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("theme", required: false)
     @RenderSection("scripts", required: false)
 </body>
 </html>

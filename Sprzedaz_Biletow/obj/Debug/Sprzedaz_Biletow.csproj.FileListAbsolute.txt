@@ -1,0 +1,113 @@
+C:\SGGW\Projekt_APP\Sprzedaz_Biletow\bin\Debug\SmartSell.exe.config
+C:\SGGW\Projekt_APP\Sprzedaz_Biletow\bin\Debug\SmartSell.exe
+C:\SGGW\Projekt_APP\Sprzedaz_Biletow\bin\Debug\SmartSell.pdb
+C:\SGGW\Projekt_APP\Sprzedaz_Biletow\bin\Debug\pl\SmartSell.resources.dll
+C:\SGGW\Projekt_APP\Sprzedaz_Biletow\bin\Debug\af-ZA\SmartSell.resources.dll
+C:\SGGW\Projekt_APP\Sprzedaz_Biletow\bin\Debug\af\SmartSell.resources.dll
+C:\SGGW\Projekt_APP\Sprzedaz_Biletow\bin\Debug\pl-PL\SmartSell.resources.dll
+C:\SGGW\Projekt_APP\Sprzedaz_Biletow\bin\Debug\EntityFramework.dll
+C:\SGGW\Projekt_APP\Sprzedaz_Biletow\bin\Debug\EntityFramework.SqlServer.dll
+C:\SGGW\Projekt_APP\Sprzedaz_Biletow\bin\Debug\EntityFramework.SqlServerCompact.dll
+C:\SGGW\Projekt_APP\Sprzedaz_Biletow\bin\Debug\itextsharp.dll
+C:\SGGW\Projekt_APP\Sprzedaz_Biletow\bin\Debug\itextsharp.pdfa.dll
+C:\SGGW\Projekt_APP\Sprzedaz_Biletow\bin\Debug\itextsharp.xtra.dll
+C:\SGGW\Projekt_APP\Sprzedaz_Biletow\bin\Debug\MySql.Data.dll
+C:\SGGW\Projekt_APP\Sprzedaz_Biletow\bin\Debug\MySql.Web.dll
+C:\SGGW\Projekt_APP\Sprzedaz_Biletow\bin\Debug\System.Data.SqlServerCe.dll
+C:\SGGW\Projekt_APP\Sprzedaz_Biletow\bin\Debug\EntityFramework.xml
+C:\SGGW\Projekt_APP\Sprzedaz_Biletow\bin\Debug\EntityFramework.SqlServer.xml
+C:\SGGW\Projekt_APP\Sprzedaz_Biletow\bin\Debug\EntityFramework.SqlServerCompact.xml
+C:\SGGW\Projekt_APP\Sprzedaz_Biletow\bin\Debug\itextsharp.xml
+C:\SGGW\Projekt_APP\Sprzedaz_Biletow\obj\Debug\Sprzedaz_Biletow.ChangePass.resources
+C:\SGGW\Projekt_APP\Sprzedaz_Biletow\obj\Debug\Sprzedaz_Biletow.Form1.resources
+C:\SGGW\Projekt_APP\Sprzedaz_Biletow\obj\Debug\Sprzedaz_Biletow.MAIN.resources
+C:\SGGW\Projekt_APP\Sprzedaz_Biletow\obj\Debug\Sprzedaz_Biletow.Platnosc.resources
+C:\SGGW\Projekt_APP\Sprzedaz_Biletow\obj\Debug\Sprzedaz_Biletow.Properties.Resources.resources
+C:\SGGW\Projekt_APP\Sprzedaz_Biletow\obj\Debug\Sprzedaz_Biletow.Reg.resources
+C:\SGGW\Projekt_APP\Sprzedaz_Biletow\obj\Debug\Sprzedaz_Biletow.Sprzedaz.resources
+C:\SGGW\Projekt_APP\Sprzedaz_Biletow\obj\Debug\Sprzedaz_Biletow.Form1.pl.resources
+C:\SGGW\Projekt_APP\Sprzedaz_Biletow\obj\Debug\Sprzedaz_Biletow.MAIN.af-ZA.resources
+C:\SGGW\Projekt_APP\Sprzedaz_Biletow\obj\Debug\Sprzedaz_Biletow.MAIN.af.resources
+C:\SGGW\Projekt_APP\Sprzedaz_Biletow\obj\Debug\Sprzedaz_Biletow.MAIN.pl-PL.resources
+C:\SGGW\Projekt_APP\Sprzedaz_Biletow\obj\Debug\Sprzedaz_Biletow.MAIN.pl.resources
+C:\SGGW\Projekt_APP\Sprzedaz_Biletow\obj\Debug\Sprzedaz_Biletow.csproj.GenerateResource.Cache
+C:\SGGW\Projekt_APP\Sprzedaz_Biletow\obj\Debug\pl\SmartSell.resources.dll
+C:\SGGW\Projekt_APP\Sprzedaz_Biletow\obj\Debug\af-ZA\SmartSell.resources.dll
+C:\SGGW\Projekt_APP\Sprzedaz_Biletow\obj\Debug\af\SmartSell.resources.dll
+C:\SGGW\Projekt_APP\Sprzedaz_Biletow\obj\Debug\pl-PL\SmartSell.resources.dll
+C:\SGGW\Projekt_APP\Sprzedaz_Biletow\obj\Debug\SmartSell.exe
+C:\SGGW\Projekt_APP\Sprzedaz_Biletow\obj\Debug\SmartSell.pdb
+C:\SGGW\Projekt_APP\Sprzedaz_Biletow\obj\Debug\Sprzedaz_Biletow.ADMIN.resources
+G:\Praca Inżynierska Krzysztof Kwaśnik\Sprzedaz_Biletow\bin\Debug\SmartSell.exe.config
+G:\Praca Inżynierska Krzysztof Kwaśnik\Sprzedaz_Biletow\obj\Debug\SmartSell.exe
+G:\Praca Inżynierska Krzysztof Kwaśnik\Sprzedaz_Biletow\obj\Debug\SmartSell.pdb
+C:\Users\Beli\Documents\Praca Inżynierska Krzysztof Kwaśnik\Sprzedaz_Biletow\bin\Debug\SmartSell.exe.config
+C:\Users\Beli\Documents\Praca Inżynierska Krzysztof Kwaśnik\Sprzedaz_Biletow\obj\Debug\SmartSell.exe
+C:\Users\Beli\Documents\Praca Inżynierska Krzysztof Kwaśnik\Sprzedaz_Biletow\obj\Debug\SmartSell.pdb
+C:\Users\Beli\Documents\Praca Inżynierska Krzysztof Kwaśnik\Sprzedaz_Biletow\bin\Debug\SmartSell.exe
+C:\Users\Beli\Documents\Praca Inżynierska Krzysztof Kwaśnik\Sprzedaz_Biletow\bin\Debug\SmartSell.pdb
+C:\Users\Beli\Documents\Praca Inżynierska Krzysztof Kwaśnik\Sprzedaz_Biletow\bin\Debug\pl\SmartSell.resources.dll
+C:\Users\Beli\Documents\Praca Inżynierska Krzysztof Kwaśnik\Sprzedaz_Biletow\bin\Debug\af-ZA\SmartSell.resources.dll
+C:\Users\Beli\Documents\Praca Inżynierska Krzysztof Kwaśnik\Sprzedaz_Biletow\bin\Debug\af\SmartSell.resources.dll
+C:\Users\Beli\Documents\Praca Inżynierska Krzysztof Kwaśnik\Sprzedaz_Biletow\bin\Debug\pl-PL\SmartSell.resources.dll
+C:\Users\Beli\Documents\Praca Inżynierska Krzysztof Kwaśnik\Sprzedaz_Biletow\bin\Debug\EntityFramework.dll
+C:\Users\Beli\Documents\Praca Inżynierska Krzysztof Kwaśnik\Sprzedaz_Biletow\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Beli\Documents\Praca Inżynierska Krzysztof Kwaśnik\Sprzedaz_Biletow\bin\Debug\EntityFramework.SqlServerCompact.dll
+C:\Users\Beli\Documents\Praca Inżynierska Krzysztof Kwaśnik\Sprzedaz_Biletow\bin\Debug\System.Data.SqlServerCe.dll
+C:\Users\Beli\Documents\Praca Inżynierska Krzysztof Kwaśnik\Sprzedaz_Biletow\bin\Debug\EntityFramework.xml
+C:\Users\Beli\Documents\Praca Inżynierska Krzysztof Kwaśnik\Sprzedaz_Biletow\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Beli\Documents\Praca Inżynierska Krzysztof Kwaśnik\Sprzedaz_Biletow\bin\Debug\EntityFramework.SqlServerCompact.xml
+C:\Users\Beli\Documents\Praca Inżynierska Krzysztof Kwaśnik\Sprzedaz_Biletow\bin\Debug\itextsharp.xml
+C:\Users\Beli\Documents\Praca Inżynierska Krzysztof Kwaśnik\Sprzedaz_Biletow\obj\Debug\Sprzedaz_Biletow.csprojResolveAssemblyReference.cache
+C:\Users\Beli\Documents\Praca Inżynierska Krzysztof Kwaśnik\Sprzedaz_Biletow\obj\Debug\Sprzedaz_Biletow.ADMIN.resources
+C:\Users\Beli\Documents\Praca Inżynierska Krzysztof Kwaśnik\Sprzedaz_Biletow\obj\Debug\Sprzedaz_Biletow.ChangePass.resources
+C:\Users\Beli\Documents\Praca Inżynierska Krzysztof Kwaśnik\Sprzedaz_Biletow\obj\Debug\Sprzedaz_Biletow.Form1.resources
+C:\Users\Beli\Documents\Praca Inżynierska Krzysztof Kwaśnik\Sprzedaz_Biletow\obj\Debug\Sprzedaz_Biletow.MAIN.resources
+C:\Users\Beli\Documents\Praca Inżynierska Krzysztof Kwaśnik\Sprzedaz_Biletow\obj\Debug\Sprzedaz_Biletow.Platnosc.resources
+C:\Users\Beli\Documents\Praca Inżynierska Krzysztof Kwaśnik\Sprzedaz_Biletow\obj\Debug\Sprzedaz_Biletow.Properties.Resources.resources
+C:\Users\Beli\Documents\Praca Inżynierska Krzysztof Kwaśnik\Sprzedaz_Biletow\obj\Debug\Sprzedaz_Biletow.Reg.resources
+C:\Users\Beli\Documents\Praca Inżynierska Krzysztof Kwaśnik\Sprzedaz_Biletow\obj\Debug\Sprzedaz_Biletow.Sprzedaz.resources
+C:\Users\Beli\Documents\Praca Inżynierska Krzysztof Kwaśnik\Sprzedaz_Biletow\obj\Debug\Sprzedaz_Biletow.Form1.pl.resources
+C:\Users\Beli\Documents\Praca Inżynierska Krzysztof Kwaśnik\Sprzedaz_Biletow\obj\Debug\Sprzedaz_Biletow.MAIN.af-ZA.resources
+C:\Users\Beli\Documents\Praca Inżynierska Krzysztof Kwaśnik\Sprzedaz_Biletow\obj\Debug\Sprzedaz_Biletow.MAIN.af.resources
+C:\Users\Beli\Documents\Praca Inżynierska Krzysztof Kwaśnik\Sprzedaz_Biletow\obj\Debug\Sprzedaz_Biletow.MAIN.pl-PL.resources
+C:\Users\Beli\Documents\Praca Inżynierska Krzysztof Kwaśnik\Sprzedaz_Biletow\obj\Debug\Sprzedaz_Biletow.MAIN.pl.resources
+C:\Users\Beli\Documents\Praca Inżynierska Krzysztof Kwaśnik\Sprzedaz_Biletow\obj\Debug\Sprzedaz_Biletow.csproj.GenerateResource.Cache
+C:\Users\Beli\Documents\Praca Inżynierska Krzysztof Kwaśnik\Sprzedaz_Biletow\obj\Debug\pl\SmartSell.resources.dll
+C:\Users\Beli\Documents\Praca Inżynierska Krzysztof Kwaśnik\Sprzedaz_Biletow\obj\Debug\af-ZA\SmartSell.resources.dll
+C:\Users\Beli\Documents\Praca Inżynierska Krzysztof Kwaśnik\Sprzedaz_Biletow\obj\Debug\af\SmartSell.resources.dll
+C:\Users\Beli\Documents\Praca Inżynierska Krzysztof Kwaśnik\Sprzedaz_Biletow\obj\Debug\pl-PL\SmartSell.resources.dll
+C:\Users\k.kwasnik\Documents\Uczelnia\MGR\Sprzedaz_Biletow\bin\Debug\SmartSell.exe.config
+C:\Users\k.kwasnik\Documents\Uczelnia\MGR\Sprzedaz_Biletow\obj\Debug\SmartSell.exe
+C:\Users\k.kwasnik\Documents\Uczelnia\MGR\Sprzedaz_Biletow\obj\Debug\SmartSell.pdb
+C:\Users\k.kwasnik\Documents\Uczelnia\MGR\Sprzedaz_Biletow\bin\Debug\SmartSell.exe
+C:\Users\k.kwasnik\Documents\Uczelnia\MGR\Sprzedaz_Biletow\bin\Debug\SmartSell.pdb
+C:\Users\k.kwasnik\Documents\Uczelnia\MGR\Sprzedaz_Biletow\bin\Debug\pl\SmartSell.resources.dll
+C:\Users\k.kwasnik\Documents\Uczelnia\MGR\Sprzedaz_Biletow\bin\Debug\af-ZA\SmartSell.resources.dll
+C:\Users\k.kwasnik\Documents\Uczelnia\MGR\Sprzedaz_Biletow\bin\Debug\af\SmartSell.resources.dll
+C:\Users\k.kwasnik\Documents\Uczelnia\MGR\Sprzedaz_Biletow\bin\Debug\pl-PL\SmartSell.resources.dll
+C:\Users\k.kwasnik\Documents\Uczelnia\MGR\Sprzedaz_Biletow\bin\Debug\EntityFramework.dll
+C:\Users\k.kwasnik\Documents\Uczelnia\MGR\Sprzedaz_Biletow\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\k.kwasnik\Documents\Uczelnia\MGR\Sprzedaz_Biletow\bin\Debug\EntityFramework.SqlServerCompact.dll
+C:\Users\k.kwasnik\Documents\Uczelnia\MGR\Sprzedaz_Biletow\bin\Debug\System.Data.SqlServerCe.dll
+C:\Users\k.kwasnik\Documents\Uczelnia\MGR\Sprzedaz_Biletow\bin\Debug\EntityFramework.xml
+C:\Users\k.kwasnik\Documents\Uczelnia\MGR\Sprzedaz_Biletow\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\k.kwasnik\Documents\Uczelnia\MGR\Sprzedaz_Biletow\bin\Debug\EntityFramework.SqlServerCompact.xml
+C:\Users\k.kwasnik\Documents\Uczelnia\MGR\Sprzedaz_Biletow\obj\Debug\Sprzedaz_Biletow.Properties.Resources.resources
+C:\Users\k.kwasnik\Documents\Uczelnia\MGR\Sprzedaz_Biletow\obj\Debug\Sprzedaz_Biletow.Sprzedaz.resources
+C:\Users\k.kwasnik\Documents\Uczelnia\MGR\Sprzedaz_Biletow\obj\Debug\Sprzedaz_Biletow.csproj.GenerateResource.Cache
+C:\Users\k.kwasnik\Documents\Uczelnia\MGR\Sprzedaz_Biletow\obj\Debug\pl\SmartSell.resources.dll
+C:\Users\k.kwasnik\Documents\Uczelnia\MGR\Sprzedaz_Biletow\obj\Debug\af-ZA\SmartSell.resources.dll
+C:\Users\k.kwasnik\Documents\Uczelnia\MGR\Sprzedaz_Biletow\obj\Debug\af\SmartSell.resources.dll
+C:\Users\k.kwasnik\Documents\Uczelnia\MGR\Sprzedaz_Biletow\obj\Debug\pl-PL\SmartSell.resources.dll
+C:\Users\k.kwasnik\Documents\Uczelnia\MGR\Sprzedaz_Biletow\obj\Debug\Sprzedaz_Biletow.LoginForm.resources
+C:\Users\k.kwasnik\Documents\Uczelnia\MGR\Sprzedaz_Biletow\obj\Debug\Sprzedaz_Biletow.LoginForm.pl.resources
+C:\Users\k.kwasnik\Documents\Uczelnia\MGR\Sprzedaz_Biletow\obj\Debug\Sprzedaz_Biletow.AdminForm.resources
+C:\Users\k.kwasnik\Documents\Uczelnia\MGR\Sprzedaz_Biletow\obj\Debug\Sprzedaz_Biletow.ChangePasswordForm.resources
+C:\Users\k.kwasnik\Documents\Uczelnia\MGR\Sprzedaz_Biletow\obj\Debug\Sprzedaz_Biletow.MainWindowForm.resources
+C:\Users\k.kwasnik\Documents\Uczelnia\MGR\Sprzedaz_Biletow\obj\Debug\Sprzedaz_Biletow.PaymentForm.resources
+C:\Users\k.kwasnik\Documents\Uczelnia\MGR\Sprzedaz_Biletow\obj\Debug\Sprzedaz_Biletow.RegistrationForm.resources
+C:\Users\k.kwasnik\Documents\Uczelnia\MGR\Sprzedaz_Biletow\obj\Debug\Sprzedaz_Biletow.MainWindowForm.af-ZA.resources
+C:\Users\k.kwasnik\Documents\Uczelnia\MGR\Sprzedaz_Biletow\obj\Debug\Sprzedaz_Biletow.MainWindowForm.af.resources
+C:\Users\k.kwasnik\Documents\Uczelnia\MGR\Sprzedaz_Biletow\obj\Debug\Sprzedaz_Biletow.MainWindowForm.pl-PL.resources
+C:\Users\k.kwasnik\Documents\Uczelnia\MGR\Sprzedaz_Biletow\obj\Debug\Sprzedaz_Biletow.MainWindowForm.pl.resources

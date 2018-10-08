@@ -1,0 +1,59 @@
+<mainpage inline-template>
+  <div>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+		<div class="newborder">
+			<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+				Menu
+				<i class="fa fa-bars"></i>
+			</button>
+			<div class="componentMenu">
+				<div class="collapse navbar-collapse" id="navbarResponsive">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item">
+							<a v-bind:class="['nav-link js-scroll-trigger tab-button menu-button', { active: currentTab === 'mypage' }]" v-on:click="currentTab = 'mypage'">MyPage</a>
+						</li>
+						<li class="nav-item">
+							<a v-bind:class="['nav-link js-scroll-trigger tab-button menu-button', { active: currentTab === 'history' }]" v-on:click="currentTab = 'history'">History</a>
+						</li>
+						<li class="nav-item">
+							<a v-bind:class="['nav-link js-scroll-trigger tab-button menu-button', { active: currentTab === 'contact' }]" v-on:click="[currentTab = 'contact', contact]">Contact</a>
+						</li>
+						<li class="nav-item">
+							<a v-bind:class="['nav-link js-scroll-trigger tab-button menu-button', { active: currentTab === 'reportproblem' }]" v-on:click="currentTab = 'reportproblem'">Report Problem</a>
+						</li>
+						<li style="display: inline-flex;" class="nav-item">
+							<a id="logIn" v-on:click="logOut" class="nav-link js-scroll-trigger menu-button" href="#login">Log Out ({{ message }})</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+    </nav>
+    <header class="masthead">
+      <div class="new-container h-100">
+        <div class="row h-100">
+          <div id="contactOwner" class="loggedForm">
+            <component v-bind:is="currentTabComponent"></component>
+          </div>
+        </div>
+      </div>
+    </header>
+    <footer>
+      <div class="container">
+        <p>&copy; Public Transport Website created on master diplome purposes by Krzysztof Kwasnik. All Rights Reserved.</p>
+        <p>&copy; Warsaw School of Technology</p>
+        <ul class="list-inline">
+          <li class="list-inline-item">
+            <a href="#">Privacy</a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#">Terms</a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#">FAQ</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+</mainpage>

@@ -1,0 +1,10 @@
+<script type="text/x-template" id="mypage">
+  <div class="vueSelectList">
+    <v-select :options="options" label="title">
+      <template slot="option" slot-scope="option">
+        <span :class="option.icon"></span>
+        {{ option.title }}
+      </template>
+    </v-select>
+    </div>
+</script>

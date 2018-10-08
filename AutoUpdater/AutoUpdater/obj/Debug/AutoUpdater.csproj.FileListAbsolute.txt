@@ -1,0 +1,12 @@
+C:\Users\a602582\Documents\Visual Studio 2013\Projects\AutoUpdater\AutoUpdater\bin\Debug\AutoUpdater.exe.config
+C:\Users\a602582\Documents\Visual Studio 2013\Projects\AutoUpdater\AutoUpdater\bin\Debug\AutoUpdater.exe
+C:\Users\a602582\Documents\Visual Studio 2013\Projects\AutoUpdater\AutoUpdater\bin\Debug\AutoUpdater.pdb
+C:\Users\a602582\Documents\Visual Studio 2013\Projects\AutoUpdater\AutoUpdater\obj\Debug\AutoUpd.Launcher.resources
+C:\Users\a602582\Documents\Visual Studio 2013\Projects\AutoUpdater\AutoUpdater\obj\Debug\AutoUpdater.Properties.Resources.resources
+C:\Users\a602582\Documents\Visual Studio 2013\Projects\AutoUpdater\AutoUpdater\obj\Debug\AutoUpdater.csproj.GenerateResource.Cache
+C:\Users\a602582\Documents\Visual Studio 2013\Projects\AutoUpdater\AutoUpdater\obj\Debug\AutoUpdater.exe
+C:\Users\a602582\Documents\Visual Studio 2013\Projects\AutoUpdater\AutoUpdater\obj\Debug\AutoUpdater.pdb
+C:\Users\a602582\Documents\Visual Studio 2013\Projects\AutoUpdater\AutoUpdater\obj\Debug\AutoUpdater.csprojResolveAssemblyReference.cache
+C:\Users\Beli\Documents\Praca Inżynierska Krzysztof Kwaśnik\AutoUpdater\AutoUpdater\bin\Debug\AutoUpdater.exe.config
+C:\Users\Beli\Documents\Praca Inżynierska Krzysztof Kwaśnik\AutoUpdater\AutoUpdater\obj\Debug\AutoUpdater.exe
+C:\Users\Beli\Documents\Praca Inżynierska Krzysztof Kwaśnik\AutoUpdater\AutoUpdater\obj\Debug\AutoUpdater.pdb

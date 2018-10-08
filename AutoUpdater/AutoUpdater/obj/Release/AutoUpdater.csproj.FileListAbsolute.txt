@@ -1,0 +1,11 @@
+C:\Users\KK250423\source\repos\PublicTransport\AutoUpdater\AutoUpdater\obj\Release\AutoUpd.Launcher.resources
+C:\Users\KK250423\source\repos\PublicTransport\AutoUpdater\AutoUpdater\obj\Release\AutoUpdater.Properties.Resources.resources
+C:\Users\KK250423\source\repos\PublicTransport\AutoUpdater\AutoUpdater\obj\Release\AutoUpdater.csproj.GenerateResource.cache
+C:\Users\KK250423\source\repos\PublicTransport\AutoUpdater\AutoUpdater\obj\Release\AutoUpdater.csproj.CoreCompileInputs.cache
+C:\Users\KK250423\source\repos\PublicTransport\AutoUpdater\AutoUpdater\bin\Release\AutoUpdater.exe.config
+C:\Users\KK250423\source\repos\PublicTransport\AutoUpdater\AutoUpdater\bin\Release\AutoUpdater.exe
+C:\Users\KK250423\source\repos\PublicTransport\AutoUpdater\AutoUpdater\bin\Release\AutoUpdater.pdb
+C:\Users\KK250423\source\repos\PublicTransport\AutoUpdater\AutoUpdater\obj\Release\Interop.Shell32.dll
+C:\Users\KK250423\source\repos\PublicTransport\AutoUpdater\AutoUpdater\obj\Release\AutoUpdater.csproj.ResolveComReference.cache
+C:\Users\KK250423\source\repos\PublicTransport\AutoUpdater\AutoUpdater\obj\Release\AutoUpdater.exe
+C:\Users\KK250423\source\repos\PublicTransport\AutoUpdater\AutoUpdater\obj\Release\AutoUpdater.pdb

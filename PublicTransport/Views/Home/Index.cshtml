@@ -1,68 +1,94 @@
 ﻿@{
-    ViewBag.Title = "Home Page";
+    ViewBag.Title = "Public Transport";
+    Layout = "~/Views/Shared/_LayoutNewAge.cshtml";
 }
 
 
 
-<div class="row">
-    <div class="col-md-12">
-        <div id="messagesTable"></div>
+@*<div class="row">
+        <div class="col-md-12">
+            <div id="messagesTable"></div>
+        </div>
     </div>
-</div>
 
-@section Scripts{
-    @*<script src='<%: ResolveClientUrl("~/Scripts/jquery.signalR-2.3.0.min.js") %>'></script>
-    <script src='<%: ResolveClientUrl("~/signalr/hubs") %>'></script>*@
+    @section Scripts{
+        @*<script src='<%: ResolveClientUrl("~/Scripts/jquery.signalR-2.3.0.min.js") %>'></script>
+        <script src='<%: ResolveClientUrl("~/signalr/hubs") %>'></script>
 
-    <script src="~/Scripts/jquery.signalR-2.3.0.min.js"></script>
-    <script src="~/signalr/hubs"></script>
+@*<script src="~/Scripts/jquery.signalR-2.3.0.min.js"></script>
+<script src="~/signalr/hubs"></script>
 
-    <script type="text/javascript">
-        $(function () {
-            // Declare a proxy to reference the hub.
-            var notifications = $.connection.notificationHub;
-            //var notifications = $.connection.notificationHub;
+<script type="text/javascript">
+    $(function () {
+        // Declare a proxy to reference the hub.
+        // notification = $.hubConnection('/PublicTransport');
+        var notifications = $.connection.notificationHub
+        //var notifications = $.connection.notificationHub;
 
-            //debugger;
-            // Create a function that the hub can call to broadcast messages.
-            notifications.client.updateMessages = function () {
-                getAllMessages()
-            };
-            // Start the connection.
-            setTimeout(function () {
-                $.connection.hub.start().done(function () {
-                    getAllMessages();
-                });
-            }, 5000);
-        });
-
-        function hubConnection(url, options) {
-            var settings = {
-                qs: null,
-                logging: false,
-                useDefaultPath: true
-            };
-
-            $.extend(settings, options);
-
-            if (!url || settings.useDefaultPath) {
-                url = (url || "") + "/signalr";
-            }
-            return new hubConnection.fn.init(url, settings);
-        }
-
-        function getAllMessages() {
-            var tbl = $('#messagesTable');
-            $.ajax({
-                url: '/home/GetMessages',
-                contentType: 'application/json; charset:utf-8',
-                type: 'GET',
-                dataType: 'html'
-            }).done(function (result) {
-                tbl.empty().append(result);
-            }).error(function () {
+        //debugger;
+        // Create a function that the hub can call to broadcast messages.
+        notifications.client.updateMessages = function () {
+            //getAllMessages()
+        };
+        // Start the connection.
+        setTimeout(function () {
+            $.connection.hub.start().done(function () {
+                //getAllMessages();
             });
+        }, 5000);
+    });
+
+    function hubConnection(url, options) {
+        var settings = {
+            qs: null,
+            logging: false,
+            useDefaultPath: true
+        };
+
+        $.extend(settings, options);
+
+        if (!url || settings.useDefaultPath) {
+            url = (url || "") + "/signalr";
         }
-    </script>
+        return new hubConnection.fn.init(url, settings);
+    }
+
+    function getBaseURL() {
+        var url = location.href;
+        var baseURL = url.substring(0, url.indexOf('/', 14));
+        if (baseURL.indexOf('http://localhost') != -1) {
+            var url = location.href;
+            var pathname = location.pathname;
+            var index1 = url.indexOf(pathname);
+            var index2 = url.indexOf("/", index1 + 1);
+            var baseLocalUrl = url.substr(0, index2);
+
+            return baseLocalUrl + "/";
+        }
+        else {
+            return baseURL + "/";
+        }
+    }
+
+    function getAllMessages() {
+        var tbl = $('#messagesTable');
+        var url = getBaseURL();
+        $.ajax({
+            url: url + 'home/GetMessages',
+            contentType: 'application/json; charset:utf-8',
+            type: 'GET',
+            dataType: 'html'
+        }).done(function (result) {
+            tbl.empty().append(result);
+        }).error(function () {
+        });
+    }
+</script>
 
 }
+@* 
+ This is the main dashboard layout that creates the AdminLTE look and feel
+    It includes all of the relevant CSS and Js in this project and across CDNs around the web for optimal load times
+    TODO: Use this layout in your views by either setting the "Layout" property 
+    or changing your  _ViewStart.cshtml to use this layout
+ *@

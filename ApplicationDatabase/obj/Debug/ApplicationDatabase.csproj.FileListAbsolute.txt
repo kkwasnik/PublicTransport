@@ -1,0 +1,4 @@
+C:\Users\k.kwasnik\Documents\Uczelnia\MGR\ApplicationDatabase\bin\Debug\ApplicationDatabase.dll
+C:\Users\k.kwasnik\Documents\Uczelnia\MGR\ApplicationDatabase\bin\Debug\ApplicationDatabase.pdb
+C:\Users\k.kwasnik\Documents\Uczelnia\MGR\ApplicationDatabase\obj\Debug\ApplicationDatabase.dll
+C:\Users\k.kwasnik\Documents\Uczelnia\MGR\ApplicationDatabase\obj\Debug\ApplicationDatabase.pdb

@@ -1,0 +1,325 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Public Transport</title>
+    <link href="~/NewAgeTheme/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="~/NewAgeTheme/vendor/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="~/NewAgeTheme/vendor/simple-line-icons/css/simple-line-icons.css">
+    <link rel="stylesheet" href="~/NewAgeTheme/device-mockups/device-mockups.min.css">
+    <link href="~/NewAgeTheme/css/new-age.css" rel="stylesheet">
+    <link href="~/NewAgeTheme/css/loginForm.css" rel="stylesheet" type="text/css">
+    <link href="~/Content/Custom.css" rel="stylesheet" type="text/css">
+</head>
+
+<body id="page-top">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand js-scroll-trigger" onclick="registrationFormShow()" href="#page-top">You don`t have account? Sign Up Now!</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="fa fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#download">Download</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#features">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+                    </li>
+                    <li style="display: inline-flex;" class="nav-item">
+                        <a id="logIn" onclick="modalLogin()" class="nav-link js-scroll-trigger" href="@Url.Action("Index", "LoginPannel")#login">Log In</a>
+                        <i style="font-size: large; margin-top: 7%" class="fa fa-hand-o-left"></i>
+                    </li>
+                </ul>
+                @*Register button
+                    <div class="button-pop"><button type="button" onclick="registrationFormShow()" href="#" class="btn btn-primary btn-lg outline launch-modal" data-modal-id="modal-register">Register</button></div>*@
+                <div id="loginForm" style="display:none" class="login-box">
+                    <img src="~/NewAgeTheme/avatar.png" class="avatar">
+                    <h1>Login Here</h1>
+                    <form>
+                        <p>Username</p>
+                        <input id="usr" type="text" name="username" placeholder="Enter Username">
+                        <p>Password</p>
+                        <input id="pass" type="password" name="password" placeholder="Enter Password">
+                        <input id="logIntoPage" type="submit" onclick="logIntoApplication(); return false;" name="submit" value="Login">
+                        <a id="fail" style="color: red; display:none">Wrong credentials!</a>
+                        <br />
+                        <a href="#">Forgot Password ?</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <header class="masthead">
+        <div class="container h-100">
+            <div class="row h-100">
+                <div class="col-lg-7 my-auto">
+                    <div class="header-content mx-auto">
+                        <h1 class="mb-5">You can use now our Mobile app and which will make your travel even simpler! <br />Try it now for free!</h1>
+                        <a href="#download" class="btn btn-outline btn-xl js-scroll-trigger">Start Now for Free!</a>
+                    </div>
+                </div>
+                <div class="col-lg-5 my-auto">
+                    <div class="device-container">
+                        <div class="device-mockup iphone6_plus portrait white">
+                            <div class="device">
+                                <div class="screen">
+                                    <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
+                                    <img src="~/~/NewAgeTheme/img/demo-screen-1.jpg" class="img-fluid" alt="">
+                                </div>
+                                <div class="button">
+                                    <!-- You can hook the "home button" to some JavaScript events or just remove it -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="download bg-primary text-center" id="download">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 mx-auto">
+                    <h2 class="section-heading">Discover what all the buzz is about!</h2>
+                    <p>Our app is available on any mobile device! Download now to get started!</p>
+                    <div class="badges">
+                        <a class="badge-link" href="#"><img src="~/NewAgeTheme/img/google-play-badge.svg" alt=""></a>
+                        <a class="badge-link" href="#"><img src="~/NewAgeTheme/img/app-store-badge.svg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-heading text-center">
+                <h2>Unlimited Features, Unlimited Fun</h2>
+                <p class="text-muted">Check out what you can do with this app theme!</p>
+                <hr>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 my-auto">
+                    <div class="device-container">
+                        <div class="device-mockup iphone6_plus portrait white">
+                            <div class="device">
+                                <div class="screen">
+                                    <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
+                                    <img src="~/NewAgeTheme/img/demo-screen-1.jpg" class="img-fluid" alt="">
+                                </div>
+                                <div class="button">
+                                    <!-- You can hook the "home button" to some JavaScript events or just remove it -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8 my-auto">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="feature-item">
+                                    <i class="icon-screen-smartphone text-primary"></i>
+                                    <h3>Device Mockups</h3>
+                                    <p class="text-muted">Ready to use HTML/CSS device mockups, no Photoshop required!</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="feature-item">
+                                    <i class="icon-camera text-primary"></i>
+                                    <h3>Flexible Use</h3>
+                                    <p class="text-muted">Put an image, video, animation, or anything else in the screen!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="feature-item">
+                                    <i class="icon-present text-primary"></i>
+                                    <h3>Free to Use</h3>
+                                    <p class="text-muted">As always, this theme is free to download and use for any purpose!</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="feature-item">
+                                    <i class="icon-lock-open text-primary"></i>
+                                    <h3>Open Source</h3>
+                                    <p class="text-muted">Since this theme is MIT licensed, you can use it commercially!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="cta">
+        <div class="cta-content">
+            <div class="container">
+                <h2>Stop waiting.<br>Start building.</h2>
+                <a href="#contact" class="btn btn-outline btn-xl js-scroll-trigger">Let's Get Started!</a>
+            </div>
+        </div>
+        <div class="overlay"></div>
+    </section>
+    <section class="contact bg-primary" id="contact">
+        <div class="container">
+            <h2>
+                We
+                <i class="fa fa-heart"></i>
+                new friends!
+            </h2>
+            <ul class="list-inline list-social">
+                <li class="list-inline-item social-twitter">
+                    <a href="#">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                </li>
+                <li class="list-inline-item social-facebook">
+                    <a href="#">
+                        <i class="fa fa-facebook"></i>
+                    </a>
+                </li>
+                <li class="list-inline-item social-google-plus">
+                    <a href="#">
+                        <i class="fa fa-google-plus"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <p>&copy; Public Transport Website created on master diplome purposes by Krzysztof Kwasnik. All Rights Reserved.</p>
+            <p>&copy; Warsaw School of Technology</p>
+            <ul class="list-inline">
+                <li class="list-inline-item">
+                    <a href="#">Privacy</a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="#">Terms</a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="#">FAQ</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <div class="modal fade" id="modal-register" tabindex="-1" aria-labelledby="modal-register-label" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <br />
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal-register-label">Register Your Account</h5>
+                    <button type="button" class="close move-top" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form role="form" action="" method="post" class="registration-form">
+                        <br />
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1"><i style="font-size: x-large" class="fa fa-user-circle"></i></span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="User name..." aria-label="userName" aria-describedby="basic-addon1" />
+                        </div>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1"><i style="font-size: x-large" class="fa fa-key"></i></span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="Password..." aria-label="pass" aria-describedby="basic-addon1" />
+                        </div>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1"><i style="font-size: x-large" class="fa fa-envelope"></i></span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="Email..." aria-label="mail" aria-describedby="basic-addon1" />
+                        </div>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1"><i style="font-size: 180%" class="fa fa-phone"></i></span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="Phone..." aria-label="phone" aria-describedby="basic-addon1" />
+                        </div>
+                        <br />
+                        <div onselectstart="return false" class="form-check">
+                            <input type="checkbox" class="form-check-input" id="materialIndeterminate2" checked>
+                            <label class="form-check-label" for="materialIndeterminate2">Accept terms and rights described <a href="url">HERE</a></label>
+                        </div>
+                        <br />
+                        <br />
+                        <button type="button" style="height: 44px; padding-right: 10px; float: right; width: 170px; border-radius: 13px;" class="btn btn-success btn-lg btn-block">Submit</button>
+                        <br />
+                        <br />
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        @RenderBody()
+    </div>
+    <script src="~/Scripts/jquery-3.3.1.min.js"></script>
+    <script src="~/NewAgeTheme/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="~/NewAgeTheme/vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="~/NewAgeTheme/js/new-age.min.js"></script>
+    <script src="~/Scripts/sha.js"></script>
+    <script type="text/javascript">
+        function registrationFormShow() {
+            $('#modal-register').modal('show');
+        }
+
+        function modalLogin() {
+            var loginForm = $('#loginForm');
+            var loginButton = $('#logIn');
+            if (loginForm.is(":visible")) {
+                loginButton.removeAttr('style');
+                loginForm.hide(700);
+            }
+            else {
+                loginButton.css('color', '#fcbd20');
+                loginForm.show(700);
+            }
+        }
+
+        function logIntoApplication() {
+            var login = $('#usr').val();
+            var sha256 = new jsSHA('SHA-256', 'TEXT');
+            sha256.update($('#pass').val());
+            var hashedPassword = sha256.getHash("HEX").toUpperCase();
+            $.ajax({
+                url: 'LoginPannel/VerifyCredentials',
+                type: 'POST',
+                data: { login: login, password: hashedPassword },
+                success: function (data) {
+                    if (data.includes("success")) {
+                        window.location.href = '@Url.Content("~/LoginPannel/Index")';
+                    }
+                    else {
+                        var failedLogin = $('#fail');
+                        if (!failedLogin.is(":visible")) {
+                            failedLogin.show();
+                        }
+                    }
+                },
+                error: function (err) {
+                    console.log(err.responseText);
+                }
+            });
+        }
+
+    </script>
+</body>
+
+</html>
