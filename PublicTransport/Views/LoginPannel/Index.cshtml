@@ -1,31 +1,31 @@
 ﻿@{
-  ViewBag.Title = "Public Transport";
-  Layout = "~/Views/Shared/_Layout.cshtml";
+	ViewBag.Title = "Public Transport";
+	Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 <html>
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="author" content="KKwaśnik">
-  <title>Public Transport</title>
-  <link href="~/NewAgeTheme/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="~/NewAgeTheme/vendor/font-awesome/css/font-awesome.min.css">
-  <link rel="stylesheet" href="~/NewAgeTheme/vendor/simple-line-icons/css/simple-line-icons.css">
-  <link rel="stylesheet" href="~/NewAgeTheme/device-mockups/device-mockups.min.css">
-  <link href="~/NewAgeTheme/css/new-age.css" rel="stylesheet">
-  <link href="~/NewAgeTheme/css/loginForm.css" rel="stylesheet" type="text/css">
-  <link href="~/Content/Custom.css" rel="stylesheet" type="text/css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="author" content="KKwaśnik">
+	<title>Public Transport</title>
+	<link href="~/NewAgeTheme/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="~/NewAgeTheme/vendor/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="~/NewAgeTheme/vendor/simple-line-icons/css/simple-line-icons.css">
+	<link rel="stylesheet" href="~/NewAgeTheme/device-mockups/device-mockups.min.css">
+	<link href="~/NewAgeTheme/css/new-age.css" rel="stylesheet">
+	<link href="~/NewAgeTheme/css/loginForm.css" rel="stylesheet" type="text/css">
+	<link href="~/Content/Custom.css" rel="stylesheet" type="text/css">
 </head>
 <body onload="initVue()">
-  <div id="app">
-    @Html.Partial("MainPage")
-  </div>
+	<div id="app">
+		@Html.Partial("MainPage")
+	</div>
 </body>
 </html>
 
-@*@Html.Partial("../Shared/ComponentViews/Alert")*@
-@Html.Partial("Contact")
+
+@Html.Partial("Sale")
 @Html.Partial("MyPage")
 @Html.Partial("History")
 @Html.Partial("ReportProblem")

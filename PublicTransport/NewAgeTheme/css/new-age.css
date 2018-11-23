@@ -113,8 +113,6 @@ section h2 {
 	#mainNav .navbar-nav > li > a:hover,
 	#mainNav .navbar-nav > li > a:focus:hover {
 		color: #fdcc52 !important;
-		font-size: 15px;
-		font-weight: bold;
 	}
 
 @media (min-width: 992px) {
@@ -276,9 +274,9 @@ section.cta {
   padding: 250px 0;
   background-image: url("../img/bg-cta.jpg");
   background-position: center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
+  --webkit-background-size: cover;
+  --moz-background-size: cover;
+  --o-background-size: cover;
   background-size: cover;
 }
 

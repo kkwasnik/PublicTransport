@@ -1,0 +1,105 @@
+<script type="text/x-template" id="sale">
+	<div>
+		<modal title="Fade/Zoom Modal" effect="fade/zoom"
+			   :value="showModal" @@ok="buyTicket($event)" @@cancel="showModal = false">
+			safkfksakfsak
+		</modal>
+		<alert :value.sync="showAlert" placement="top-right" :duration=3000 :type="alertType" style="height:90px; min-width:380px;" dismissable>
+			<span class="icon">
+				<i style="font-size: xx-large;" class="fa fa-check-circle" v-if="alertType==='info'"></i>
+				<i style="font-size: xx-large;" class="fa fa-info-circle" v-if="alertType==='danger'"></i>
+				<i style="font-size: xx-large;" class="fa fa-check-circle" v-if="alertType==='success'"></i>
+			</span>
+			<div class="alertContent">
+				<strong v-if="alertType==='info'">Info</strong>
+				<strong v-if="alertType==='success'">Success</strong>
+				<strong v-if="alertType==='danger'">Error</strong>
+				<p v-html="AlertInside"></p>
+			</div>
+		</alert>
+
+		<div id="contact" class="contact">
+			<div class="componentHeader" style="margin-right: 55%;">
+				<i style="font-size: xx-large; margin-left: 5%; margin-top: 3%;" class="fa fa-file-text"></i>
+				<label style="font-size: 26px; margin-left: 1%; margin-bottom: 1%">{{ title }}</label>
+				<a style="display: block; margin-left: 5%; margin-bottom: 3%">In order to continue, please select ticket that you would like to purchase:</a>
+			</div>
+			<div class="contactForm">
+				<div class="ticket">
+					<div class="tabs">
+						<a v-on:click="activetab=1" v-bind:class="[ activetab === 1 ? 'active' : '' ]">Ticket Extension</a>
+						<a v-on:click="activetab=2" v-bind:class="[ activetab === 2 ? 'active' : '' ]">New Ticket</a>
+						<a v-on:click="activetab=3" v-bind:class="[ activetab === 3 ? 'active' : '' ]">Parking Ticket</a>
+					</div>
+
+					<div class="content">
+						<div v-if="activetab === 1" class="tabcontent">
+							<a> first tab </a>
+						</div>
+						<div v-if="activetab === 2" class="tabcontent">
+							<a>Below you are able to see the tickets list that you can buy: </a>
+							<div class="singleTicket" v-for="ticket in tickets">
+								@*<div v-if="currentType === ticket.TicketType || currentType === 'None'">*@
+								<span class="icon">
+									<img style="opacity: 0.8; width:100px; height :140px;" v-bind:src="'NewAgeTheme/img/ticket.png'" />
+									@*<i style="font-size: xx-large;" class="fa fa-check-circle"></i>*@
+								</span>
+								<div class="insideTicketContent">
+									<a>{{ ticket.Type.replace(/\D/g, "") }} Days named ticket<span style="float: right; font-weight: bold;">PLN: {{ ticket.Cost }}</span></a>
+									<a>Orginizer: <span class="required">ZTM</span><span style="float: right; font-style: italic; font-size: 11px;" v-if="ticket.Student || ticket.Resident">{{ ticketDescription }}</span></a>
+									<a>Named ticket entitling to use public transport@*transport communication*@<span style="float: right; font-style: italic; font-size: 11px;" v-if="ticket.Zone === 2">+ every zone</span></a>
+									<a class="itemDesc" v-if="ticket.Parking">+ parking ticket</a>
+									<div class="ticketSetupControl">
+										<button title="-50% Student discount" type="button" v-on:click="ticketType = ticket.Type, ticket.Student = !ticket.Student, changeDiscount($event, 'student')" v-bind:class="[ticket.Student === true ? 'btn btn-success ticketSetup' : 'btn btn-danger ticketSetup' ]">
+											<i class="fa fa-university" aria-hidden="true"></i>
+										</button>
+										<button title="-25% City Resident ticket" type="button" v-on:click="ticketType = ticket.Type, ticket.Resident = !ticket.Resident, changeDiscount($event, 'resident')" v-bind:class="[ticket.Resident === true ? 'btn btn-success ticketSetup' : 'btn btn-danger ticketSetup' ]">
+											<i class="fa fa-briefcase" aria-hidden="true"></i>
+										</button>
+										<button title="Ticket for every zone" type="button" v-on:click="ticketType = ticket.Type, ticket.Zone === 2 ? ticket.Zone = 1 : ticket.Zone = 2 , changeDiscount($event, 'everyZone')" v-bind:class="[ticket.Zone === 2 ? 'btn btn-success ticketSetup' : 'btn btn-danger ticketSetup' ]">
+											<i class="fa fa-ticket" aria-hidden="true"></i>
+										</button>
+										<button title="Additional parking ticket" type="button" v-on:click="ticketType = ticket.Type, ticket.Parking = !ticket.Parking, changeDiscount($event, 'parkingTicket')" v-bind:class="[ticket.Parking === true ? 'btn btn-success ticketSetup' : 'btn btn-danger ticketSetup' ]">
+											<i class="fa fa-car" aria-hidden="true"></i>
+										</button>
+									</div>
+									<button type="button" v-on:click="showModal = true" class="btn btn-warning absoluteButton">
+										<i class="fa fa-ticket" aria-hidden="true"></i>
+										Buy Ticket
+									</button>
+								</div>
+							</div>
+						</div>
+						<div v-if="activetab === 3" class="tabcontent">
+							<a>Below you are able to see the list of parking tickets that you can buy: </a>
+							<div v-for="ticket in parkingTickets">
+								<div v-if="ticket.Type !== '1HP'" class="singleTicket">
+									@*<div v-if="currentType === ticket.TicketType || currentType === 'None'">*@
+									<span class="icon">
+										<img style="margin-top: 16%; opacity: 0.8; width: 100px; height: 100px;" v-bind:src="'NewAgeTheme/img/parking.png'" />
+										@*<i style="font-size: xx-large;" class="fa fa-check-circle"></i>*@
+									</span>
+									<div class="insideTicketContent">
+										<a>{{ ticket.Type.replace(/\D/g, "") }} {{ ticket.Type.replace(/\D/g, "") === '1' ? 'Day' : 'Days' }} paired with car registration number<span style="float: right; font-weight: bold;">PLN: {{ ticket.Cost }}</span></a>
+										<a>Orginizer: <span class="required">ZTM</span><span style="float: right; font-style: italic; font-size: 11px;" v-if="ticket.Resident">{{ ticketDescription }}</span></a>
+										<a>Named ticket entitling to park the car on city park zones<span style="float: right; font-style: italic; font-size: 11px;"></span></a>
+										<a class="itemDesc"></a>
+										<div class="ticketSetupControl">
+											<button title="-25% City Resident ticket" type="button" v-on:click="ticketType = ticket.Type, ticket.Resident = !ticket.Resident, changeDiscount($event, 'resident')" v-bind:class="[ticket.Resident === true ? 'btn btn-success ticketSetup' : 'btn btn-danger ticketSetup' ]">
+												<i class="fa fa-briefcase" aria-hidden="true"></i>
+											</button>
+										</div>
+										<button type="button" v-on:click="showModal = true" class="btn btn-warning absoluteButton">
+											<i class="fa fa-ticket" aria-hidden="true"></i>
+											Buy Parking
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</script>

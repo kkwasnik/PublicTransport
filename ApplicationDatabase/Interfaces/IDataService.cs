@@ -95,6 +95,15 @@ namespace ApplicationDatabase.Interfaces
         */
         void RegisterOpUser(string user, string name, string surname, string phone, string email, string password,
             int status, string startDate, string endDate, int adm, int pok);
+        /* 
+        Metoda pobierająca oraz aktualizująca aktualne bilety względem taryfy
+        */
+        List<TicketModel> GetTariffTickets(string type, int zone, bool student, bool resident, bool parking);
+
+        /* 
+        Metoda pobierająca oraz aktualizująca aktualne bilety parkingowe względem taryfy
+        */
+        List<TicketModel> GetParkingTickets(string type, bool resident);
 
         void Connection(bool state);
     }

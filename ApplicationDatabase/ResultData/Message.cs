@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace PublicTransport.Models
+namespace ApplicationDatabase.ResultData
 {
     public class Messages
     {

@@ -1,3 +1,4 @@
+C:\Users\KK250423\source\repos\PublicTransport\PublicTransport\obj\Release\PublicTransportWeb.csproj.CoreCompileInputs.cache
 C:\Users\KK250423\source\repos\PublicTransport\PublicTransport\bin\ApplicationInsights.config
 C:\Users\KK250423\source\repos\PublicTransport\PublicTransport\bin\PublicTransport.dll.config
 C:\Users\KK250423\source\repos\PublicTransport\PublicTransport\bin\PublicTransport.dll
@@ -20,7 +21,6 @@ C:\Users\KK250423\source\repos\PublicTransport\PublicTransport\bin\roslyn\Micros
 C:\Users\KK250423\source\repos\PublicTransport\PublicTransport\bin\roslyn\Microsoft.VisualBasic.Core.targets
 C:\Users\KK250423\source\repos\PublicTransport\PublicTransport\bin\roslyn\Microsoft.Win32.Primitives.dll
 C:\Users\KK250423\source\repos\PublicTransport\PublicTransport\bin\roslyn\System.AppContext.dll
-C:\Users\KK250423\source\repos\PublicTransport\PublicTransport\bin\roslyn\System.Collections.Immutable.dll
 C:\Users\KK250423\source\repos\PublicTransport\PublicTransport\bin\roslyn\System.Console.dll
 C:\Users\KK250423\source\repos\PublicTransport\PublicTransport\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
 C:\Users\KK250423\source\repos\PublicTransport\PublicTransport\bin\roslyn\System.Diagnostics.Process.dll
@@ -170,6 +170,7 @@ C:\Users\KK250423\source\repos\PublicTransport\PublicTransport\bin\System.Xml.XP
 C:\Users\KK250423\source\repos\PublicTransport\PublicTransport\bin\System.Xml.XPath.XDocument.dll
 C:\Users\KK250423\source\repos\PublicTransport\PublicTransport\bin\WebGrease.dll
 C:\Users\KK250423\source\repos\PublicTransport\PublicTransport\bin\ApplicationDatabase.pdb
+C:\Users\KK250423\source\repos\PublicTransport\PublicTransport\bin\ApplicationDatabase.dll.config
 C:\Users\KK250423\source\repos\PublicTransport\PublicTransport\bin\Microsoft.AspNet.SignalR.Client.xml
 C:\Users\KK250423\source\repos\PublicTransport\PublicTransport\bin\Microsoft.AspNet.SignalR.Core.xml
 C:\Users\KK250423\source\repos\PublicTransport\PublicTransport\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
@@ -250,8 +251,8 @@ C:\Users\KK250423\source\repos\PublicTransport\PublicTransport\bin\Microsoft.AI.
 C:\Users\KK250423\source\repos\PublicTransport\PublicTransport\bin\Microsoft.AI.WindowsServer.xml
 C:\Users\KK250423\source\repos\PublicTransport\PublicTransport\bin\Microsoft.AI.Web.xml
 C:\Users\KK250423\source\repos\PublicTransport\PublicTransport\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\KK250423\source\repos\PublicTransport\PublicTransport\obj\Release\PublicTransportWeb.csproj.CoreCompileInputs.cache
 C:\Users\KK250423\source\repos\PublicTransport\PublicTransport\obj\Release\PublicTransportWeb.csproj.CopyComplete
 C:\Users\KK250423\source\repos\PublicTransport\PublicTransport\obj\Release\PublicTransport.dll
 C:\Users\KK250423\source\repos\PublicTransport\PublicTransport\obj\Release\PublicTransport.pdb
+C:\Users\KK250423\source\repos\PublicTransport\PublicTransport\bin\roslyn\System.Collections.Immutable.dll
 C:\Users\KK250423\source\repos\PublicTransport\PublicTransport\obj\Release\PublicTransportWeb.csprojAssemblyReference.cache

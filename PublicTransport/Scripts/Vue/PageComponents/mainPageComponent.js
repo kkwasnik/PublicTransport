@@ -4,7 +4,7 @@ Vue.component('mainpage', {
           message: 'Krzysztof',
           currentTab: 'mypage',
           currentComponent: null,
-          tabs: ['MyPage', 'History', 'Contact', 'ReportProblem']
+          tabs: ['MyPage', 'History', 'Buy Ticket', 'ReportProblem']
       }
   },
   methods: {

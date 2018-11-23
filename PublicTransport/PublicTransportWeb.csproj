@@ -32,7 +32,7 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
+    <Optimize>true</Optimize>
     <OutputPath>bin\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
@@ -48,8 +48,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="ApplicationDatabase">
-      <HintPath>..\ApplicationDatabase\bin\Debug\ApplicationDatabase.dll</HintPath>
+    <Reference Include="ApplicationDatabase, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ApplicationDatabase\bin\Release\ApplicationDatabase.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.AspNet.SignalR.Client, Version=2.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.AspNet.SignalR.Client.2.2.3\lib\net45\Microsoft.AspNet.SignalR.Client.dll</HintPath>
@@ -449,16 +450,18 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LoginPannelController.cs" />
+    <Compile Include="Controllers\SaleController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\Message.cs" />
     <Compile Include="SignalR\MessageRepository.cs" />
     <Compile Include="SignalR\NotificationHub.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SignalR\StartUp.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="NewAgeTheme\img\parking.png" />
+    <Content Include="NewAgeTheme\img\ticket.png" />
     <Content Include="Scripts\isMobileBrowser.js" />
     <Content Include="Scripts\NodeList.js" />
     <Content Include="Scripts\utils.js" />
@@ -466,9 +469,8 @@
     <Content Include="Scripts\vue-strap-lang.js" />
     <Content Include="Scripts\vue-strap.min.js" />
     <Content Include="Scripts\vue-resource.min.js" />
-    <Content Include="Scripts\Vue\Components\Alert.js" />
     <Content Include="Scripts\Vue\PageComponents\historyComponent.js" />
-    <Content Include="Scripts\Vue\PageComponents\contactComponent.js" />
+    <Content Include="Scripts\Vue\PageComponents\saleComponent.js" />
     <Content Include="Scripts\Vue\PageComponents\mainPageComponent.js" />
     <Content Include="Scripts\vSelect.js" />
     <Content Include="Scripts\Vue\PageComponents\reportProblemComponent.js" />
@@ -488,7 +490,7 @@
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
-    <Content Include="NewAgeTheme\avatar.png" />
+    <Content Include="NewAgeTheme\img\avatar.png" />
     <Content Include="NewAgeTheme\css\new-age.css" />
     <Content Include="NewAgeTheme\css\new-age.min.css" />
     <Content Include="NewAgeTheme\css\loginForm.css" />
@@ -843,11 +845,10 @@
     <Content Include="Scripts\popper-utils.js.map" />
     <Content Include="Views\LoginPannel\Index.cshtml" />
     <Content Include="Views\LoginPannel\ReportProblem.cshtml" />
-    <Content Include="Views\LoginPannel\Contact.cshtml" />
+    <Content Include="Views\LoginPannel\Sale.cshtml" />
     <Content Include="Views\LoginPannel\MainPage.cshtml" />
     <Content Include="Views\LoginPannel\MyPage.cshtml" />
     <Content Include="Views\LoginPannel\History.cshtml" />
-    <Content Include="Views\Shared\ComponentViews\Alert.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -868,6 +869,9 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

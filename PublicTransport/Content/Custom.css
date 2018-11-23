@@ -286,11 +286,10 @@ div.contact {
 }
 
 div.contactForm {
-	min-width: 200px !important;
 	background-color: rgba(255, 255, 255, 0.80);
 	margin-left: 4%;
 	border: 1px solid #ea6d00;
-	margin-right: 40%;
+	margin-right: 32%;
 	padding: 15px 10px;
 	border-radius: 15px;
 }
@@ -317,12 +316,6 @@ div.componentMenu {
 
 .menu-button {
 	color: black !important;
-	opacity: 0.5;
-	--webkit-opacity: 0.5;
-	--moz-opacity: 0.5;
-	transition: 0.5s ease;
-	-webkit-transition: 0.5s ease;
-	-moz-transition: 0.5s ease;
 }
 
 .menu-button {
@@ -348,4 +341,118 @@ div.componentMenu {
 	div.loggedForm {
 		margin-top: 4%;
 	}
+}
+
+.itemDesc {
+	text-align: right;
+	font-style: italic;
+	font-size: 11px;
+}
+
+/* RESET */
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+.newContainer {
+	max-width: 620px;
+	min-width: 420px;
+	margin: 40px auto;
+	font-family: "Nunito Sans", Arial, Helvetica, sans-serif;
+	color: #888;
+}
+
+.tabs {
+	overflow: hidden;
+	margin-left: 20px;
+	margin-bottom: -2px;
+}
+
+	.tabs ul {
+		list-style-type: none;
+		margin-left: 20px;
+	}
+
+	.tabs a {
+		float: left;
+		cursor: pointer;
+		padding: 12px 24px;
+		transition: background-color 0.2s;
+		border: 1px solid #ccc;
+		border-right: none;
+		background-color: #f1f1f1;
+		border-radius: 10px 10px 0 0;
+		font-weight: bold;
+	}
+
+		.tabs a:last-child {
+			border-right: 1px solid #ccc;
+		}
+
+		.tabs a:hover {
+			background-color: #aaa;
+			color: #fff;
+		}
+
+		.tabs a.active {
+			background-color: #fff;
+			color: #484848;
+			border-bottom: 2px solid #fff;
+			cursor: default;
+		}
+
+.tabcontent {
+	padding: 30px;
+	border: 1px solid #ccc;
+	border-radius: 10px;
+	box-shadow: 3px 3px 6px #e1e1e1
+}
+
+.singleTicket {
+	justify-content: space-between;
+	display: flex;
+	background-color: rgba(255, 255, 255, 0.80);
+	margin-left: 4%;
+	border: 1px solid #ea6d00;
+	margin-top: 4%;
+	margin-bottom: 4%;
+	margin-right: 10%;
+	padding: 0px 15px;
+	border-radius: 2px;
+	width: 100%;
+	height: auto;
+	min-height: 100%
+}
+
+.absoluteButton {
+	justify-content: flex-end;
+	display: flex;
+	float: right;
+	margin-bottom: 2%;
+	margin-top: 2%;
+	margin-right: -1%;
+}
+
+.ticketSetup {
+	justify-content: flex-end;
+	display: flex;
+	float: left;
+	margin-top: 2%;
+	border-radius: 2px;
+}
+
+.ticketSetupControl > * {
+	margin-right: 10px;
+}
+
+.insideTicketContent a {
+	display: block;
+}
+
+.insideTicketContent {
+	margin-top: 3%;
+	margin-left: 2%;
+	width: 100%;
 }

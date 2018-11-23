@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
 using System.Threading;
@@ -21,7 +22,7 @@ namespace ApplicationDatabase.DataServices
             }
             else if ((this.connection == null || this.connection.State == ConnectionState.Closed) && state)
             {
-                this.connection = new SqlConnection("Data Source=.;Initial Catalog=DB_A2BEA8_Believer;Integrated Security=True;MultipleActiveResultSets=true;");
+                this.connection = new SqlConnection(ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString);
                 this.connection.Open();
             }
         }
@@ -573,6 +574,63 @@ namespace ApplicationDatabase.DataServices
             }
 
             this.Connection(false);   
+        }
+
+        public List<TicketModel> GetTariffTickets(string type, int zone, bool student, bool resident, bool parking)
+        {
+            this.Connection(true);
+            var messages = new List<ApplicationDatabase.ResultData.TicketModel>();
+            using (var command = new SqlCommand(@"SELECT [Type], [Name], [Cost], [Zone], [StudentTicket], [ParkingTicket], [ResidentTicket] FROM [ProductionBase].[dbo].[Products] WHERE [ZONE]=@zone AND [StudentTicket]=@student AND [ResidentTicket]=@resident AND [ParkingTicket]=@parking AND [OnlyParking] = 0 AND Type = (CASE WHEN (@type <> 'Any') THEN @type Else [Type] END)", connection))
+            {
+                command.Notification = null;
+                command.Parameters.Add(new SqlParameter("type", type));
+                command.Parameters.Add(new SqlParameter("zone", zone));
+                command.Parameters.Add(new SqlParameter("student", student));
+                command.Parameters.Add(new SqlParameter("resident", resident));
+                command.Parameters.Add(new SqlParameter("parking", parking));
+
+                if (connection.State == ConnectionState.Closed)
+                {
+                    connection.Open();
+                }
+
+                var reader = command.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    messages.Add(item: new ApplicationDatabase.ResultData.TicketModel { Type = (string)reader["Type"], Name = (string)reader["Name"], Cost = (decimal)reader["Cost"], Zone = (int)reader["Zone"], Student = (bool)reader["StudentTicket"], Parking = (bool)reader["ParkingTicket"], Resident = (bool)reader["ResidentTicket"] });
+                }
+            }
+
+            this.Connection(false);
+            return messages;
+        }
+
+        public List<TicketModel> GetParkingTickets(string type, bool resident)
+        {
+            var messages = new List<ApplicationDatabase.ResultData.TicketModel>();
+            this.Connection(true);
+            using (var command = new SqlCommand(@"SELECT * FROM [ProductionBase].[dbo].[Products] WHERE [ResidentTicket]=@resident AND [OnlyParking] = 1 AND Type = (CASE WHEN (@type <> 'Any') THEN @type Else [Type] END)", connection))
+            {
+                command.Notification = null;
+                command.Parameters.Add(new SqlParameter("type", type));
+                command.Parameters.Add(new SqlParameter("resident", resident));
+
+                if (connection.State == ConnectionState.Closed)
+                {
+                    connection.Open();
+                }
+
+                var reader = command.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    messages.Add(item: new ApplicationDatabase.ResultData.TicketModel { Type = (string)reader["Type"], Name = (string)reader["Name"], Cost = (decimal)reader["Cost"], Zone = (int)reader["Zone"], Resident = (bool)reader["ResidentTicket"] });
+                }
+            }
+
+            this.Connection(false);
+            return messages;
         }
     }
 }

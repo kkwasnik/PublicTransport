@@ -6,30 +6,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <script src="~/Scripts/vue.js"></script>
-  <script src="~/Scripts/vue-strap.min.js"></script>
-  <script src="~/Scripts/vue-resource.min.js"></script>
-  @*<script src="~/Scripts/isMobileBrowser.js"></script>*@
-  @*<script src="~/Scripts/vue-strap-lang.js"></script>*@
-  <script src="~/Scripts/axios.js"></script>
-  @*<script src="~/Scripts/utils.js" type="module"></script>
-    <script src="~/Scripts/NodeList.js" type="module"></script>*@
-  <script src="~/Scripts/vSelect.js"></script>
-  <script src="~/Scripts/Vue/Components/vue-upload-component.js"></script>
-  <script src="~/Scripts/Vue/Main.js"></script>
-  <script src="~/Scripts/Vue/PageComponents/contactComponent.js"></script>
-  <script src="~/Scripts/Vue/PageComponents/mypageComponent.js"></script>
-  <script src="~/Scripts/Vue/PageComponents/mainPageComponent.js"></script>
-  <script src="~/Scripts/Vue/PageComponents/historyComponent.js"></script>
-  <script src="~/Scripts/Vue/PageComponents/reportProblemComponent.js"></script>
-  @*<script src="~/Scripts/Vue/Components/Alert.js"></script>*@
-  @*<script src="~/Scripts/vueinput.js"></script>*@
+	<script src="~/Scripts/jquery-3.3.1.min.js"></script>
+	<script src="~/Scripts/jquery.signalR-2.3.0.min.js"></script>
+	<script src="~/signalr/hubs"></script>
+	<script src="~/Scripts/vue.js"></script>
+	<script src="~/Scripts/vue-strap.min.js"></script>
+	<script src="~/Scripts/vue-resource.min.js"></script>
+	<script src="~/Scripts/axios.js"></script>
+	<script src="~/Scripts/Vue/Main.js"></script>
+	<script src="~/Scripts/vSelect.js"></script>
+	<script src="~/Scripts/Vue/Components/vue-upload-component.js"></script>
+	<script src="~/Scripts/Vue/PageComponents/saleComponent.js"></script>
+	<script src="~/Scripts/Vue/PageComponents/mypageComponent.js"></script>
+	<script src="~/Scripts/Vue/PageComponents/mainPageComponent.js"></script>
+	<script src="~/Scripts/Vue/PageComponents/historyComponent.js"></script>
+	<script src="~/Scripts/Vue/PageComponents/reportProblemComponent.js"></script>
 </head>
 <body>
     <div>
         @RenderBody()
     </div>
-    @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("theme", required: false)
     @RenderSection("scripts", required: false)

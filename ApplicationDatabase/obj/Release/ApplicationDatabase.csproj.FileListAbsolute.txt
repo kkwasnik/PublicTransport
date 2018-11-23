@@ -1,5 +1,7 @@
+C:\Users\KK250423\source\repos\PublicTransport\ApplicationDatabase\obj\Release\ApplicationDatabase.csproj.CoreCompileInputs.cache
+C:\Users\KK250423\source\repos\PublicTransport\ApplicationDatabase\bin\Release\ApplicationDatabase.dll.config
 C:\Users\KK250423\source\repos\PublicTransport\ApplicationDatabase\bin\Release\ApplicationDatabase.dll
 C:\Users\KK250423\source\repos\PublicTransport\ApplicationDatabase\bin\Release\ApplicationDatabase.pdb
-C:\Users\KK250423\source\repos\PublicTransport\ApplicationDatabase\obj\Release\ApplicationDatabase.csproj.CoreCompileInputs.cache
 C:\Users\KK250423\source\repos\PublicTransport\ApplicationDatabase\obj\Release\ApplicationDatabase.dll
 C:\Users\KK250423\source\repos\PublicTransport\ApplicationDatabase\obj\Release\ApplicationDatabase.pdb
+C:\Users\KK250423\source\repos\PublicTransport\ApplicationDatabase\obj\Release\ApplicationDatabase.csprojAssemblyReference.cache
